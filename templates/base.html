@@ -1,28 +1,55 @@
-<html>
-    <head>
-        {% if title %}
-        <title>{{ title }} - microblog</title>
-        {% else %}
-        <title>microblog</title>
-        {% endif %}
-    </head>
-    <body>
-        <div>
-            Microblog:
-            <a href="/index">Home</a>
-            <a href="/login">Login</a>
-            <a href="/register">Register</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
+</head>
+<body>
+    <section class = "hero is-primary is-fullheight">
+        <div class = "hero-head">
+            <nav class = "navbar">
+                <div class="container">
+                    <div id = "navbarMenuHeroA" class = "navbar-menu">
+                        <div class = "navbar-end">
+                            <a  class = "navbar-item">
+                                Home
+                            </a>
+                    
+                            <a class = "navbar-item">
+                                Profile
+                            </a>
+
+                            <a  class = "navbar-item">
+                                Login
+                            </a>
+
+                            <a class = "navbar-item">
+                                Signup
+                            </a>
+                            
+                            <a class = "navbar-item">
+                                Logout
+                            </a>
+                      
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
         </div>
-        <hr>
-        {% with messages = get_flashed_messages() %}
-        {% if messages %}
-        <ul>
-            {% for message in messages %}
-            <li>{{ message }}</li>
-            {% endfor %}
-        </ul>
-        {% endif %}
-        {% endwith %}
-        {% block content %}{% endblock %}
-    </body>
+    <div class = "hero-body">
+        <div class = "container has-text-centered">
+            {% block content%}  
+            {% endblock %}
+        </div>
+
+    </div>
+    </section>
+</body>
 </html>
