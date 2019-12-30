@@ -1,0 +1,17 @@
+.left-col{
+    padding: 0px !important;
+}
+.image{
+    height: 100%;
+    overflow: hidden;
+}
+
+.right-col{
+    padding: 200px 100px !important;
+    text-align: left;
+}
+
+text-input {
+    border-radius: 8px;
+    width: 200%;
+}
