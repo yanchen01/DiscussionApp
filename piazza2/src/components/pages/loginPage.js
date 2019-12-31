@@ -15,14 +15,14 @@ class Loginpage extends React.Component {
                     <h2>Login</h2>
                     <form>
                         <label>
-                            <input className="text-input" type="text" name="name" />
+                            <input className="textinput" type="email" name="email" placeholder="Email"/>
                         </label>
                         <br/>
                         <label>
-                            <input className="text-input" type="text" name="name" />
+                            <input className="textinput" type="text" name="name" placeholder="Password"/>
                         </label>
                         <br />
-                        <input  className="text-input" type="submit" value="Login" />
+                        <input type="submit" value="Login" />
                     </form>
                 </div>
             </div>
