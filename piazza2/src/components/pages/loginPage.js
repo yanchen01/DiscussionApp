@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import '../../styles/login.css';
-
+// import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 
 class Loginpage extends React.Component {
@@ -22,7 +22,7 @@ class Loginpage extends React.Component {
                             <input className="textinput" type="text" name="name" placeholder="Password"/>
                         </label>
                         <br />
-                        <input type="submit" value="Login" />
+                        <input className="button" type="submit" value="Login" />
                     </form>
                 </div>
             </div>
